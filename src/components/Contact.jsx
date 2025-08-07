@@ -56,11 +56,33 @@ const Contact = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted:", formData);
-        setFormData({ name: "", email: "", message: "" });
-        alert("Message sent successfully!");
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await fetch("https://formspree.io/f/mblkpyop", { // GANTI dengan form ID milikmu
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+            }),
+        });
+
+        if (response.ok) {
+            alert("Pesan berhasil dikirim!");
+            setFormData({ name: "", email: "", message: "" });
+        } else {
+            alert("Gagal mengirim pesan.");
+        }
+    } catch (error) {
+        alert("Terjadi kesalahan saat mengirim.");
+        console.error(error);
+    }
     };
 
     return (
