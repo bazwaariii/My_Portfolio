@@ -81,7 +81,7 @@ const certificationData = [
         issuer: "DQLab",
         year: "2021",
         icon: "bxl-python",
-        image: "https://drive.google.com/file/d/1WRmFrUYbcQJk1dp0YyczMgYFjKZbFgnC/view?usp=sharing"
+        image: "sertif1.jpg"
     },
     {
         name: "Python Fundamental for Data Science",
