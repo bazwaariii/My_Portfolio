@@ -5,11 +5,11 @@ const technicalSkillsData = [
         id: 1,
         category: "Frontend Development",
         skills: [
-            { name: "React.js", level: 80, icon: "bxl-react", color: "#61DAFB" },
-            { name: "JavaScript", level: 85, icon: "bxl-javascript", color: "#F7DF1E" },
-            { name: "HTML5", level: 90, icon: "bxl-html5", color: "#E34F26" },
-            { name: "CSS3", level: 90, icon: "bxl-css3", color: "#1572B6" },
-            { name: "Tailwind CSS", level: 83, icon: "bxl-tailwind-css", color: "#06B6D4" }
+            { name: "React.js", level: "Beginner", icon: "bxl-react", color: "#61DAFB" },
+            { name: "JavaScript", level: "Pro", icon: "bxl-javascript", color: "#F7DF1E" },
+            { name: "HTML5", level: "Pro", icon: "bxl-html5", color: "#E34F26" },
+            { name: "CSS3", level: "Pro", icon: "bxl-css3", color: "#1572B6" },
+            { name: "Tailwind CSS", level: "Beginner", icon: "bxl-tailwind-css", color: "#06B6D4" }
         ],
         icon: "bx-laptop",
         color: "#0d6efd"
@@ -18,8 +18,8 @@ const technicalSkillsData = [
         id: 2,
         category: "UI/UX Designer",
         skills: [
-            { name: "Figma", level: 97, icon: "bxl-figma", color: "#339933" },
-            { name: "Canva", level: 95, icon: "bx-palette", color: "#000000" },
+            { name: "Figma", level: "Expert", icon: "bxl-figma", color: "#339933" }, 
+            { name: "Canva", level: "Expert", icon: "bx-palette", color: "#000000" }
         ],
         icon: "bx-server",
         color: "#198754"
@@ -28,12 +28,13 @@ const technicalSkillsData = [
         id: 3,
         category: "Machine Learning",
         skills: [
-            { name: "Python", level: 95, icon: "bxl-python", color: "#47A248" },
-            { name: "C++", level: 95, icon: "bxl-c-plus-plus", color: "#47A248" },
+            { name: "Python", level: "Expert", icon: "bxl-python", color: "#47A248" },
+            { name: "C++", level: "Pro", icon: "bxl-c-plus-plus", color: "#47A248" }
         ],
         icon: "bx-cloud",
         color: "#fd7e14"
     }
+
 ];
 
 const softSkillsData = [
@@ -41,7 +42,6 @@ const softSkillsData = [
         id: 1,
         name: "Problem Solving",
         description: "Analytical thinking and creative solution development",
-        level: 92,
         icon: "bx bx-book-open",
         color: "#0d6efd"
     },
@@ -49,7 +49,6 @@ const softSkillsData = [
         id: 2,
         name: "Team Collaboration",
         description: "Effective communication and teamwork abilities",
-        level: 90,
         icon: "bx-group",
         color: "#198754"
     },
@@ -57,7 +56,6 @@ const softSkillsData = [
         id: 3,
         name: "Leadership",
         description: "Project management and team guidance skills",
-        level: 85,
         icon: "bx-crown",
         color: "#fd7e14"
     },
@@ -65,7 +63,6 @@ const softSkillsData = [
         id: 4,
         name: "Adaptability",
         description: "Quick learning and adaptation to new technologies",
-        level: 88,
         icon: "bx-refresh",
         color: "#6610f2"
     },
@@ -73,7 +70,6 @@ const softSkillsData = [
         id: 5,
         name: "Communication",
         description: "Clear technical communication and documentation",
-        level: 87,
         icon: "bx-chat",
         color: "#dc3545"
     },
@@ -81,7 +77,6 @@ const softSkillsData = [
         id: 6,
         name: "Time Management",
         description: "Efficient project planning and deadline management",
-        level: 89,
         icon: "bx-time",
         color: "#20c997"
     }
@@ -231,7 +226,7 @@ const Skills = () => {
                                                                 <i className={`bx ${skill.icon} text-lg mr-2`} style={{ color: skill.color }}></i>
                                                                 <span className="font-semibold text-gray-900 dark:text-white">{skill.name}</span>
                                                             </div>
-                                                            <span className="text-sm font-bold text-gray-600 dark:text-gray-400">{skill.level}%</span>
+                                                            <span className="text-sm font-bold text-gray-600 dark:text-gray-400">{skill.level}</span>
                                                         </div>
                                                         <ProgressBar level={skill.level} color={skill.color} />
                                                     </div>
@@ -273,7 +268,7 @@ const Skills = () => {
                                                 <div className="mb-2">
                                                     <div className="flex justify-between items-center mb-1">
                                                         <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Proficiency</span>
-                                                        <span className="text-sm font-bold text-gray-600 dark:text-gray-400">{skill.level}%</span>
+                                                        <span className="text-sm font-bold text-gray-600 dark:text-gray-400">{skill.level}</span>
                                                     </div>
                                                     <ProgressBar level={skill.level} color={skill.color} />
                                                 </div>
