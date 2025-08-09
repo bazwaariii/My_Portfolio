@@ -31,11 +31,10 @@ const projectsData = [
         technologies: ["Vscode", "Java", "MySQL", "Git"],
         icon: "bx bx-briefcase",
         github: "https://github.com/UrayMR/aplikasiabsensi",
-        live: "null",
         color: "#198754"
     },
     {
-        id: 3,
+        id: 4,
         title: "Aplikasi BITWALLET",
         category: "UI/UX",
         description: "Aplikasi untuk menyimpan, mengelola, dan melakukan transaksi aset kripto secara aman, cepat, dan mudah",
@@ -44,7 +43,7 @@ const projectsData = [
         live: "https://www.figma.com/proto/nY4vuLEVKuWmFFUv8CEZJb/PROJECT-PRIBADI?node-id=144-3110&t=ujWe0s5mU0JvTkOP-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
         color: "#dc3545"
     },
-    {id: 4,
+    {id: 5,
         title: "Aplikasi Velocity",
         category: "UI/UX",
         description: "Aplikasi smart trafic untuk memantau lalu lintas secara real time",
@@ -54,7 +53,7 @@ const projectsData = [
         color: "#dc3545"
     },
     {
-        id: 5,
+        id: 6,
         title: "Aplikasi Home Fitness",
         category: "UI/UX",
         description: "Aplikasi untuk latihan olahraga dan mengatur nutrisi",
@@ -64,7 +63,7 @@ const projectsData = [
         color: "#dc3545"
     },
     {
-        id: 6,
+        id: 7,
         title: "Prediksi Penyakit Jantung",
         category: "Machine-Learning",
         description: "Memprediksi pasien dengan indikasi penyakit jantung dengan machine learning menggunakan metode lightGBM",
@@ -75,7 +74,7 @@ const projectsData = [
         color: "#20c997"
     },
     {
-        id: 7,
+        id: 8,
         title: "Analisis Aspek yang Berkontribusi",
         category: "Machine-Learning",
         description: "Menganalis aspek yang berkontribusi terhadap literasi informasi mahasiswa Surabaya menggunakan metode Chi Square",
@@ -86,7 +85,7 @@ const projectsData = [
         color: "#1b7599ff"
     },
      {
-        id: 8,
+        id: 9,
         title: "Sistem ATM",
         category: "Machine-Learning",
         description: "Simulasi Sistem ATM Digital menggunakan Python",
@@ -97,7 +96,7 @@ const projectsData = [
         color: "#1b7599ff"
     },
     {
-        id: 9,
+        id: 10,
         title: "Aplikasi Keuangan",
         category: "Frontend",
         description: "Pengembangan aplikasi website kuangan dengan menggunakan PDO",
@@ -108,7 +107,7 @@ const projectsData = [
         color: "#fd7e14"
     },
     {
-        id: 10,
+        id: 11,
         title: "Aplikasi Absensi",
         category: "Frontend",
         description: "Pengembangan aplikasi website kuangan dengan menggunakan PDO",
