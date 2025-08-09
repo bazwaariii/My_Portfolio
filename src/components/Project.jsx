@@ -25,7 +25,7 @@ const projectsData = [
     },
     {
         id: 3,
-        title: "Aplikasi Asensi Kantor",
+        title: "Aplikasi Absensi Kantor",
         category: "Frontend",
         description: "Pembuatan aplikasi absensi kantor khususnya admin dan karyawan dengan Java",
         technologies: ["Vscode", "Java", "MySQL", "Git"],
