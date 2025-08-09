@@ -25,6 +25,17 @@ const projectsData = [
     },
     {
         id: 3,
+        title: "Aplikasi Asensi Kantor",
+        category: "Frontend",
+        description: "Pembuatan aplikasi absensi kantor khususnya admin dan karyawan dengan Java",
+        technologies: ["Vscode", "Java", "MySQL", "Git"],
+        icon: "bx bx-briefcase",
+        github: "https://github.com/UrayMR/aplikasiabsensi",
+        live: "null",
+        color: "#198754"
+    },
+    {
+        id: 3,
         title: "Aplikasi BITWALLET",
         category: "UI/UX",
         description: "Aplikasi untuk menyimpan, mengelola, dan melakukan transaksi aset kripto secara aman, cepat, dan mudah",
